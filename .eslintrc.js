@@ -14,4 +14,17 @@ module.exports = {
         node: true,
     },
     ignorePatterns: ['.eslintrc.js'],
+    rules: {
+        '@typescript-eslint/naming-convention': [
+            'error',
+            {
+                "selector": ["variable", "function", "classMethod", "parameter"],
+                "format": ["camelCase"]
+            },
+            {
+                "selector": ["enumMember", "class", "enum"],
+                "format": ["PascalCase"]
+            }
+        ]
+    }
 }
