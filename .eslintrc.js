@@ -15,6 +15,12 @@ module.exports = {
     },
     ignorePatterns: ['.eslintrc.js'],
     rules: {
+        "brace-style": "off",
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
+        "@typescript-eslint/brace-style": ["error"],
+        "@typescript-eslint/type-annotation-spacing": ["error", { before: false, after: true }],
         '@typescript-eslint/naming-convention': [
             'error',
             {

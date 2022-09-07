@@ -28,7 +28,8 @@ export class Vehicle_Registry {
         return new vehicle(vehicleId, modelInfo);
     }
 
-    public online_status(): registrystatus {
+    public online_status():registrystatus 
+    {
         if ( !this.online ) return registrystatus.OFFLINE;
 
         return (this.vehicle_models.keys.length == 0) ? registrystatus.CONNECTION_ERROR : registrystatus.ONLINE;

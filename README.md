@@ -22,3 +22,9 @@ $ npm run build
 ```bash
 $ npm run start
 ```
+
+## Config ESLint
+Add or remove rules from ```.eslintrc.js``` file.
+
+The rules are listed in the following page:
+https://github.com/typescript-eslint/typescript-eslint/tree/v4.16.1/packages/eslint-plugin/docs/rules
