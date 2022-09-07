@@ -1,8 +1,8 @@
 
 
-export enum registrystatus {
-    ONLINE = "Online",
-    CONNECTION_ERROR = "Error",
-    OFFLINE = "Offline"
+export enum RegistryStatus {
+    Online = "Online",
+    ConnectionError = "Error",
+    Offline = "Offline"
 }
 

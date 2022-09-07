@@ -1,10 +1,15 @@
-import { fueltype } from "../enums/fuel-type.enum";
+import { FuelType } from "../enums/fuel-type.enum";
 
-export class Vehicle_Model_Info {
+export class VehicleModelInfo {
 
-    constructor(public brand: string, public model: string, public catalogue_price: number, public fuel_type: fueltype) {}
+    constructor(
+        public brand: string, 
+        public model: string, 
+        public catalogue_price: number, 
+        public fuel_type: FuelType
+    ) {}
 
-    public get_info_string() {
+    public getInfo() {
         return `Brand: ${this.brand}, Model: ${this.model}`;
     }
 }

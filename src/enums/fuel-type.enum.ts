@@ -1,7 +1,7 @@
 
 
-export enum fueltype {
-    ELECTRIC = "Electric",
-    PETROL = "Petrol"
+export enum FuelType {
+    Electric = "Electric",
+    Petrol = "Petrol"
 }
 

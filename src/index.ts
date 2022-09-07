@@ -1,15 +1,14 @@
-import { fueltype } from './enums/fuel-type.enum';
-import { Vehicle_Model_Info } from './models/vehicle-info.model';
-import { vehicle } from './models/vehicle.model';
-import { Vehicle_Registry } from './vehicle-registry';
+import { FuelType } from './enums/fuel-type.enum';
+import { VehicleModelInfo } from './models/vehicle-info.model';
+import { VehicleRegistry } from './vehicle-registry';
 
 function main() {
-    const registry = new Vehicle_Registry();
+    const registry = new VehicleRegistry();
 
-    registry.addModelInfo(new Vehicle_Model_Info("Tesla", "Model 3", 40000, fueltype.ELECTRIC));
-    registry.addModelInfo(new Vehicle_Model_Info("BMW", "i4", 55000, fueltype.PETROL));
+    registry.addModelInfo(new VehicleModelInfo("Tesla", "Model 3", 40000, FuelType.Electric));
+    registry.addModelInfo(new VehicleModelInfo("BMW", "i4", 55000, FuelType.Petrol));
     
-    console.log(`Status: ${registry.online_status()}`);
+    console.log(`Status: ${registry.getOnlineStatus()}`);
 
     const newVehicle = registry.registerVehicle("Tesla", "Model 3");
 

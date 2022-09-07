@@ -1,12 +1,11 @@
-import { Vehicle_Model_Info } from "./vehicle-info.model";
+import { VehicleModelInfo } from "./vehicle-info.model";
 
 
-export class vehicle {
-    constructor(public vehicle_id: string, public info: Vehicle_Model_Info) {}
+export class Vehicle {
+    constructor(public vehicleId: string, public info: VehicleModelInfo) {}
 
     public toString() {
-        const info_str = this.info.get_info_string();
-        return `Id: ${this.vehicle_id}, ${this.info.get_info_string()}`;
+        return `Id: ${this.vehicleId}, ${this.info.getInfo()}`;
     }
 }
 
