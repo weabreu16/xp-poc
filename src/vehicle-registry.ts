@@ -31,7 +31,7 @@ export class VehicleRegistry {
     public getOnlineStatus(): RegistryStatus {
         if ( !this.online ) return RegistryStatus.Offline;
 
-        return (this.vehicleModels.keys.length == 0) 
+        return (this.vehicleModels.size == 0) 
             ? RegistryStatus.ConnectionError 
             : RegistryStatus.Online;
     }
